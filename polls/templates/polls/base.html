@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+<!-- my css -->
+<link rel="icon" href="https://images.emojiterra.com/google/android-pie/512px/1f1f9.png">
+<link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}" />
+<!-- b4 min.css --><!-- b4 min.js-->
+<link rel="stylesheet" type="text/css"  href="{% static 'polls/bootstrap/css/bootstrap.min.css' %}"/>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"   ></script>
+<script   src="{% static 'polls/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<title>{% block title %}SDL{% endblock %}</title>
+
+
+<style>
+.font_size
+{
+  font-size: 1000px;
+}
+.bgg
+{
+        font-family:Verdana  ;
+              
+        
+        
+        width: 100%;
+       
+        text-transform: capitalize;letter-spacing: 2px;
+
+        
+
+        -webkit-box-shadow: 3px 1px 22px 18px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 1px 22px 18px rgba(0,0,0,0.75);
+        box-shadow: 3px 1px 22px 18px rgba(0,0,0,0.75);
+}
+</style>
+<!-- <img src="{% static "polls/images/maxw.png" %}"  width="70%" height="40%" alt=""> -->
+</head>
+<body>
+<header class="site-header"> 
+
+<nav class="navbar navbar-expand  navbar-dark flex-column flex-md-row bd-navbar  fixed-top" 
+  style="padding-left:40px; font-family:monospace;background-color:#563d7c; ">
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="nav navbar-nav mr-auto"  style="font-size:60px;">    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!--logo - link for index page -->&nbsp;&nbsp;
+          <a class="nav-item nav-link active navbar_item" href=" ">
+            {{"Classifier"|upper}}</a> &nbsp;&nbsp;
+          <a class="nav-item nav-link navbar_item" href="">
+            {{"Toxic comment classififcation"|upper}}</a>&nbsp;&nbsp;
+           
+
+                            
+ 
+&nbsp;&nbsp;
+                                                
+                                                  
+
+
+ 
+
+
+        </div>
+    </div>
+</nav>
+
+
+<br><br> <br> 
+<br>
+
+</header>
+
+    
+
+
+<!-- 4 sections nav -->
+
+ 
+
+
+</div>
+
+
+{% block body %}
+
+
+{% endblock %}
+</body>
+ 

@@ -1,0 +1,28 @@
+{% extends "polls/base.html"%}
+{%block body%}
+	<div class="shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 50px; width: 235px; margin-left: 50%">
+		<a href="{% url 'home-view' %}" class="btn btn-info btn-lg" >Add new comment</a>
+	</div>	
+	<p style="margin-top: 50px">{{output_class1}}</p>
+		<div class="col-md-6 gedf-main" style="margin-top: 50px; margin-left: 600px;">
+			{%for post in posts1%}
+		<div class="card-body">
+						 
+                        <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                        <a class="card-link" href="#">
+                            <h5 class="card-title">{{post}}</h5>
+                        </a>
+
+             
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="card-link"><i class="fa fa-gittip"></i> Like</a>
+                        <a href="#" class="card-link"><i class="fa fa-mail-forward"></i> Analyse</a>
+                    </div>
+                    {%endfor%}
+        </div>
+    </div>
+
+   
+
+{%endblock%}

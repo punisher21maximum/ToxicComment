@@ -1,0 +1,246 @@
+
+li a {
+    color: green;
+}
+ 
+
+h2,h3,h4{
+    color: green;
+    font-family: 'monospace';
+}
+.c1
+{
+	color:#533b78;
+}
+.c2
+{
+	color: #241933 ;
+}
+.c3
+{
+	color:#8465b3;
+}
+.button_engg {
+  border-color: #4CAF50;  border: 2px solid ;
+  color: #563d7c;
+  background-color: white;
+
+}
+
+.button_engg:hover {
+  background-color: #8465b3;
+  color: white;
+}
+.index_middle_bg
+{
+	color:orange;       
+    font-family:Verdana ;
+    padding: 10px 30px;
+    
+    text-transform: capitalize;letter-spacing: 2px;
+
+ 
+
+}
+.navbar_css {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.navbar_item a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.navbar_item a:hover {
+  background-color: #555;
+  color: white;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+.filter_index
+{
+	color:rgba(169,3,41,1);   
+	background-color: white; 
+    font-family:monospace  ; 
+    font-size:25px;
+    padding: 50px 15px 75px 15px;                          
+    border-radius: 7px;
+    
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.filter_index_engg
+{
+	color:rgba(169,3,41,1);   
+	background-color: white; 
+    font-family:monospace  ; 
+    font-size:25px;
+    padding: 50px 15px 75px 15px;                          
+    border-radius: 7px;
+    
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+ 
+}
+
+.index_page_bg
+{
+	padding-top: 10px;   padding-bottom: 1000px;
+	background-color: white;
+}
+.detail_middle_bg
+{
+	color:black;
+	background-color: white;
+	border: black;
+	border-width: 2px;
+	border-style: solid;
+	font-family:Verdana  ;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top:20px;
+ 
+}
+.detail_heading
+{
+	padding-top: 35px ; padding-bottom: 35px;
+	color:#533b78;
+	width:100;
+	text-align:center;font-size:80px;letter-spacing: 2px;
+  
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.detail_book_heading
+{
+	padding: 35px ; 
+	color:white;
+	width:100;
+
+	background: rgba(199,22,199,1);
+	background: -moz-linear-gradient(left, rgba(199,22,199,1) 0%, rgba(50,45,128,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,22,199,1)), color-stop(100%, rgba(50,45,128,1)));
+	background: -webkit-linear-gradient(left, rgba(199,22,199,1) 0%, rgba(50,45,128,1) 100%);
+	background: -o-linear-gradient(left, rgba(199,22,199,1) 0%, rgba(50,45,128,1) 100%);
+	background: -ms-linear-gradient(left, rgba(199,22,199,1) 0%, rgba(50,45,128,1) 100%);
+	background: linear-gradient(to right, rgba(199,22,199,1) 0%, rgba(50,45,128,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c716c7', endColorstr='#322d80', GradientType=1 );
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+
+}
+.detail_price
+{
+	padding: 35px ; 
+	color:white;
+	width:100;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+
+
+	background: rgba(76,31,128,1);
+	background: -moz-linear-gradient(left, rgba(76,31,128,1) 0%, rgba(205,46,245,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(76,31,128,1)), color-stop(100%, rgba(205,46,245,1)));
+	background: -webkit-linear-gradient(left, rgba(76,31,128,1) 0%, rgba(205,46,245,1) 100%);
+	background: -o-linear-gradient(left, rgba(76,31,128,1) 0%, rgba(205,46,245,1) 100%);
+	background: -ms-linear-gradient(left, rgba(76,31,128,1) 0%, rgba(205,46,245,1) 100%);
+	background: linear-gradient(to right, rgba(76,31,128,1) 0%, rgba(205,46,245,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c1f80', endColorstr='#cd2ef5', GradientType=1 );
+}
+.detail_profile
+{
+	padding: 35px ; 
+	color:white;
+	width:100;
+
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+
+	background: rgba(112,12,36,1);
+	background: -moz-linear-gradient(left, rgba(112,12,36,1) 0%, rgba(131,3,143,1) 0%, rgba(230,113,140,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(112,12,36,1)), color-stop(0%, rgba(131,3,143,1)), color-stop(100%, rgba(230,113,140,1)));
+	background: -webkit-linear-gradient(left, rgba(112,12,36,1) 0%, rgba(131,3,143,1) 0%, rgba(230,113,140,1) 100%);
+	background: -o-linear-gradient(left, rgba(112,12,36,1) 0%, rgba(131,3,143,1) 0%, rgba(230,113,140,1) 100%);
+	background: -ms-linear-gradient(left, rgba(112,12,36,1) 0%, rgba(131,3,143,1) 0%, rgba(230,113,140,1) 100%);
+	background: linear-gradient(to right, rgba(112,12,36,1) 0%, rgba(131,3,143,1) 0%, rgba(230,113,140,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700c24', endColorstr='#e6718c', GradientType=1 );
+}
+<!-- forms-->
+
+.book_create_form
+{
+	color:maroon;   
+	background-color: white;
+	font-family:Verdana  ;
+	width:80%;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: capitalize;
+	letter-spacing: 2px; 
+  
+}
+
+.container{
+    width: 800px;
+    margin: 30px auto;
+    font-family: helvetica, tahoma;
+}
+
+#viewpdf{
+    width: 100%;
+    height: 500px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+/* side nav  */
+ 
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15%;/*   Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 200px; /* Stay at the top */
+  left: 0;
+   /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links    padding: 6px 8px 6px 16px;   display: block;*/
+.sidenav a {
+  padding-left: 5px; padding-right:5px;
+  text-decoration: none;
+  font-family:"Lato", sans-serif;
+  font-size: 15px;
+  color: primary;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white 
+}

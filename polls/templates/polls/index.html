@@ -1,0 +1,161 @@
+{% extends 'polls/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+<!--fullpage-->
+
+<div class=" " style='padding-top: 10px;   padding-bottom: 1000px;'>
+
+   
+  <!-- left side bar + middle + right side bar  -->
+  <div class="row" style="padding-top:50px;">
+
+      <!-- left side bar    -->  
+      <div class="col-lg-2 ">  
+        <!-- filters -->
+                   <div class="  " >  
+            <div class="albums-container container-fluid filter_index text-center"
+                style="width: 90%;color:#8465b3;" > 
+
+            <h1 style="color:#6b4c9a;">  </h1><hr>
+                <a class="nav-link flex-column active " href="{% url 'index' %}">
+                <button type="button" class="text-center button_engg btn-block btn-lg">{{"Home"|upper}}</button>
+              </a><br>
+
+              <a class="nav-link flex-column active " href="">
+                <button type="button" class="text-center button_engg btn-block btn-lg">{{"Test Your Comment"|upper}}</button>
+              </a><br>
+
+              <a class="nav-link flex-column active" href="{% url 'comments-view' %}">
+                <button type="button" class="text-center button_engg btn-block btn-lg">{{"Analayse Comments"|upper}}</button>
+                </a><br>        
+
+            </div > 
+    </div >
+        
+        <!-- filters end--> 
+      </div > <br><br>
+      <!-- left side bar end -->   
+                     
+
+      <!--books + paginator-->
+      <div class="col-lg-8 index_middle_bg" style="padding: 10px 30px;"> 
+
+            <!--books start-->
+            <div class="row  " style="font-size:35px;">                                  
+             
+            </div>
+            <!--book end-->
+            <!--paginator --> 
+
+            <div class="col-lg-12  " 
+style='
+-webkit-box-shadow: 0px 0px 12px 14px rgba(20,19,20,1);
+-moz-box-shadow: 0px 0px 12px 14px rgba(20,19,20,1);
+box-shadow: 0px 0px 12px 14px rgba(20,19,20,1);
+
+padding : 50px; padding-bottom: 400px;
+font-size : 30px;
+color:#7754ab;
+'>
+<div class="form-row">
+                                    <div class="form-group col-md-4">
+<form method="post" novalidate style='color:marron'>
+{% csrf_token %}
+<!--{{ form|crispy}}-->
+<div class="form-group">
+  <p>Enter Your Comment :</p>
+    {{form.comment}}
+  </div>
+<div class="form-group">
+  <p>Select Algorithm :</p>
+    {{ form.algo_field }}
+  </div>
+<br>
+
+<button type="submit" class="text-center button_engg btn-block  ">
+<p class="text-center " style="font-size: 100%; ">submit</p>
+</button> 
+</form> 
+                                    </div>
+                                    <div class="form-group col-md-2"> 
+									 
+									</div>
+
+									<div class="form-group col-md-6"
+style = "color:#533b78;"> 
+
+
+<h1> class of comment </h1><hr>
+<br> 
+									{% if input_comment %}
+{{'Your comment : '}} 
+<div style = 'color:#7754ab' >{{input_comment}}</div>
+									{% endif %}
+<br>
+<hr>
+{{'class of comment : '}}
+<div style = 'color:#7754ab' >
+{% if output_class1%}
+{{'Toxic : '}}
+<p style="color: red">{{output_class1}}</p>
+							
+<br> 
+{{'Severe Toxic : '}}
+<p style="color: red">{{output_class2}}</p>
+<br>
+{{'Obscene : '}}
+<p style="color: red">{{output_class3}}</p>
+<br>
+{{'Threat : '}}
+<p style="color: red">{{output_class4}}</p>
+<br>
+{{'Insult : '}}
+<p style="color: red">{{output_class5}}</p>
+<br>
+{{'Identity Hate : '}}
+<p style="color: red">{{output_class6}}</p>
+{% endif %}
+</div>
+							 
+									</div>
+<!--                 
+<form action="index" method="GET">
+  <select name="dropdown">
+    <option selected="selected" disabled>Select Algorithm :</option>
+    <option value="10">KNN</option>
+    <option value="20">Logistic Regression</option>
+    <option value="30">SVM</option>
+  </select>
+  <input type="submit" value="Select" class="btn btn-success ">
+</form> -->
+
+</div><!--form row end--> 
+ 
+</div><!--shadow box end--> 
+
+ 
+
+            <!--paginator end-->                        
+            
+                                    
+      </div>
+      <!-- books + paginator end-->
+
+
+      <!-- right side bar -->
+      <div class="col-lg-2  " >  
+                {% include "polls/side_bar_all.html" %} 
+      </div >
+      <!-- right side bar end -->
+
+  </div > 
+  <!-- left side bar + middle + right side bar end-->
+</div>
+<!--fullpage end-->
+{% endblock %}
+
+ <!--star begin <a href="{{ model.get_add_to_fav_url }}" class="btn btn-success btn-md">
+          Add to fav        
+</a>--><!--star end-->

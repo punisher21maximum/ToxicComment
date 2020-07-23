@@ -1,0 +1,73 @@
+{% extends "polls/base.html"%}
+{% block body %}
+
+<div class="modal-body row">
+	<div class="row">
+  <div class="col-md-6">
+<div class="shadow-lg p-3 mb-5 bg-white rounded" style="margin-top: 150px; width:400px; margin-left: 36.5%; border: 2px solid black; ">
+
+<div style = 'color:#7754ab'>
+	{% if output_class1%}
+	{{'Toxic : '}}
+	<p style="color: red">{{output_class1}}</p>
+								
+	<br> 
+	{{'Severe Toxic : '}}
+	<p style="color: red">{{output_class2}}</p>
+	<br>
+	{{'Obscene : '}}
+	<p style="color: red">{{output_class3}}</p>
+	<br>
+	{{'Threat : '}}
+	<p style="color: red">{{output_class4}}</p>
+	<br>
+	{{'Insult : '}}
+	<p style="color: red">{{output_class5}}</p>
+	<br>
+	{{'Identity Hate : '}}
+	<p style="color: red">{{output_class6}}</p>
+	{% endif %}
+	</div>
+</div>
+</div>
+<br><br>
+<div class="col-md-6">
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light1",
+	title:{
+		text: "Graph Representaion"
+	},
+	axisY: {
+		title: "Probability"
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: {{output_class1}},label:"Toxic" },
+			{ y: {{output_class2}},label:"Severe Toxic"},
+			{ y: {{output_class3}}, label:"Obscene " },
+			{ y: {{output_class4}},label:"Threat " },
+			{ y: {{output_class5}},label:"Insult " },
+			{ y: {{output_class6}}, label:"Indentity Hate"},
+
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</div>
+</div>
+</div>
+<a href="{% url 'comments-view' %}" class="btn btn-info btn-lg" style="margin-left: 41%">Go to Home Page </a>
+
+</head>
+<body>
+<div id="chartContainer" style="height: 450px; width: 50%;margin-left: 40%; margin-top: -30%"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+{% endblock %}
